@@ -1,12 +1,10 @@
 import { data } from "../config.js";
-import { Command } from "./types";
-import { Client, Collection } from "discord.js";
+import { Client } from "discord.js";
 import { loadCommands, runCommand } from "./utils.js";
 
 const client = new Client(data.options);
-const commands = new Collection<string, Command>();
 
-loadCommands(commands);
+const commands = loadCommands();
 
 client.once("ready", () => {
     console.log(`${client.user!.tag} (${client.user!.id}) is ready in ${client.guilds.cache.size} guilds with ${client.users.cache.size} users`);

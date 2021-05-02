@@ -1,5 +1,4 @@
-import { Message } from "discord.js";
-import { Command } from "../../types";
+import type { Message } from "discord.js";
 
 export const command = {
     name: "command name",

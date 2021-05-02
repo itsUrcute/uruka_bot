@@ -1,7 +1,6 @@
-import { Message } from "discord.js";
-import { Command } from "../../types";
+import type { Message } from "discord.js";
 
-export const command: Command = {
+export const command = {
     name: "ping",
     aliases: ["pinggg"],
     description: "A normal ping command",
@@ -9,6 +8,6 @@ export const command: Command = {
     guildOnly: false,
     nsfw: false,
     execute(message: Message, args: string[]){
-        message.reply("Pong!");
+        message.reply("Poong!");
     }
 };
