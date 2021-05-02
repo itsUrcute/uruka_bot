@@ -1,0 +1,14 @@
+import { Message } from "discord.js";
+import { Command } from "../../types";
+
+export const command = {
+    name: "command name",
+    aliases: [],
+    description: "Description",
+    ownerOnly: false,
+    guildOnly: false,
+    nsfw: false,
+    execute(message: Message, args: string[]){
+
+    }
+};
